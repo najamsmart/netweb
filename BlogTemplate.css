@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Blog-main-container{
+    height: 900px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: #121216;
+    align-items: center;
+    justify-content: center;
+}
+#Blog-second-top-main-container{
+    height: 900px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Blog-second-top-header{
+    height: 50px;
+    text-align: left;
+    padding-top: 20px;
+    font-size: medium;
+    color: white;
+    width: 100%;
+}
+#Blog-second-top-header span{
+    color: #64ab2f;
+}
+#Blog-second-top-body{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    gap: 10px;
+    padding: 50px;
+    flex-direction: row;
+}
+#Blog-second-top-body img{
+    height: auto;
+    width: 50%;
+}
+
+#Blog-second-top-footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Blog-second-top-footer h1{
+    color: #1c732c;
+    font: 50px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+#Blog-second-top-footer h4{
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+@media only screen and (max-width: 5000px) and (min-width: 1500px){
+    #Blog-second-top-body{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-bottom: 150px;
+        margin-top: 150px;
+        gap: 40px;
+        flex-direction: row;
+    }
+    #Blog-second-top-body img{
+        height: auto;
+        width: 500px;
+    }
+}
+@media (max-width: 991px){
+#Blog-main-container{
+    height: 700px;
+}
+#Blog-second-top-body{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+}
+#Blog-second-top-body img{
+    height: 300px;
+    width: 300px;
+}
+#Blog-second-top-footer h4{
+    font-size: 18px;
+}
+}
+@media (max-width: 768px){
+    #Blog-main-container{
+        height: 500px;
+        width: 100%;
+        margin-top: 70px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: #121216;
+        align-items: center;
+        justify-content: center;
+    }
+#Blog-second-top-body{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+}
+#Blog-second-top-body img{
+    height: 200px;
+    width: 200px;
+}
+
+#Blog-second-top-footer h1{
+    font-size: 27px;
+}
+#Blog-second-top-footer h4{
+    font-size: 15px;
+}
+}
+@media (max-width: 600px){
+    #Blog-second-top-footer h1{
+        font-size: 22px;
+    }
+    #Blog-second-top-header{
+        font-size: small;
+    }
+    #Blog-second-top-footer h4{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px){
+    #Blog-main-container{
+        height: 400px;
+        width: 100%;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        background-color: #121216;
+        align-items: center;
+        justify-content: center;
+    }
+    #Blog-second-top-footer h1{
+        font-size: 18px;
+    }
+    #Blog-second-top-footer h4{
+        font-size: 8px;
+    }
+    #Blog-second-top-header{
+        font-size: smaller;
+    }
+    #Blog-second-top-body img{
+        height: 150px;
+        width: 150px;
+    }
+    #Blog-second-social-date-container span{
+        font-size: 10px;
+    }
+}
+
+/* TEXT CONTAINMENT */
+#blog-text-main-container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+}
+
+#blog-text-left-container {
+    height: 2000px;
+    width: 35%;
+    padding: 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#blog-text-left-sticky-box {
+    height: 250px;
+    margin-left: 50px;
+    width: 70%;
+    position: sticky;
+    top: 100px; 
+    padding-bottom: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#blog-text-left-sticky-box-heading{
+    color: #64ab2f;
+}
+#blog-text-left-sticky-box p{
+    font-size: small;
+    color: gray;
+    cursor: pointer;
+    transition: all 1s;
+}
+#blog-text-left-sticky-box p:hover{
+    color: black;
+}
+#blog-text-right-container {
+    height: 100%;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blog-text-right-second-container{
+    height: 95%;
+    width: 95%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#blog-text-right-second-container p{
+    font-size: smaller;
+}
+#blog-text-right-second-container p b{
+    color: #64ab2f;
+}
+.first-word {
+    color: green;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#blog-text-right-second-container h2{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgb(5, 77, 28);
+    font-size: x-large;   
+}
+#blog-text-right-second-container h1{
+    font-weight: 900;
+    font-size: 40px;
+    color: rgb(5, 77, 28);
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+.faq-item h2 {
+    cursor: pointer;
+    color: #007bff;
+    font-size: medium !important;
+    display: flex;
+    align-items: center;
+}
+.faq-item p {
+    display: none;
+    margin-top: 10px;
+    font-size: smaller;
+    animation: fadeIn 0.3s ease-out;
+}
+.plus-minus {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+.open .plus-minus {
+    transform: rotate(45deg);
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@media (max-width: 991px) {
+    #blog-text-main-container {
+        height: fit-content;
+        width: 100%;
+    }
+    
+    #blog-text-left-container{
+        display: none;
+    }
+    #blog-text-right-container {
+        width: 100%;
+        height: auto;
+    }
+
+    #blog-text-main-container {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 1700px) and (max-width: 3500px){
+    #blog-text-right-second-container p{
+        font-size: 20px;
+    }
+    #blog-text-right-second-container h2{
+        font-size: 35px;
+        
+    }
+}
+

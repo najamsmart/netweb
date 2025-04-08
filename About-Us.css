@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* about-us-header-section */
+#about-us-header-section{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+#about-us-header-second-section{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about-us-header-second-section h6{
+    font-size: medium;
+    color: #121216;
+    font-weight: 900;
+}
+#about-us-header-second-section h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #1c732c;
+    font-weight: 900;
+}
+#about-us-header-second-section p{
+    font-size: medium;
+    color: #666;
+}
+#about-us-header-second-section a{
+    text-decoration: none;
+    color: white;
+    background-color: #1c732c;
+    width: fit-content;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #1c732c;
+    font-size: large;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+#about-us-header-second-section a:hover{
+    background: white;
+    color: #1c732c;
+}
+@media (min-width: 3000px) {
+    #about-us-header-section{
+        height: 350px;
+    }
+    #about-us-header-second-section h6{
+        font-size: x-large;
+    }
+    #about-us-header-second-section h1{
+        font-size: 55px;
+    }
+    #about-us-header-second-section p{
+        font-size: x-large;
+    }
+}
+@media (min-width: 1600px) {
+    #about-us-header-section{
+        height: 450px;
+    }
+    #about-us-header-second-section h6{
+        font-size: large;
+    }
+    #about-us-header-second-section h1{
+        font-size: 45px;
+    }
+    #about-us-header-second-section p{
+        font-size: large;
+    }
+}
+@media (max-width: 991px) {
+    #about-us-header-second-section h6{
+        font-size: medium;
+    }
+    #about-us-header-second-section h1{
+        font-size: 35px;
+    }
+    #about-us-header-second-section p{
+        font-size: small;
+    }
+}
+@media (max-width: 600px) {
+    #about-us-header-second-section{
+        height: 80%;
+    }
+    #about-us-header-second-section h6{
+        font-size: small;
+    }
+    #about-us-header-second-section h1{
+        font-size: 30px;
+    }
+    #about-us-header-second-section p{
+        font-size: x-small;
+    }
+}
+/* about-us-header-section End*/
+
+/* about-us-our-team-header-section */
+#about-us-our-team-header-section{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-us-our-team-header-second-container{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-us-our-team-header-second-container h6{
+    color: #121216;
+    font-size: large;
+    font-weight: 900;
+}
+#about-us-our-team-header-second-container h2{
+    color: #1c732c;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+#about-us-our-team-header-second-container p{
+    color: #121216;
+    font-size: medium;
+    text-align: center;
+}
+@media (min-width: 3000px) {
+    #about-us-our-team-header-second-container h6{
+        font-size: x-large;
+    }
+    #about-us-our-team-header-second-container h2{
+        font-size: 40px;
+    }
+    #about-us-our-team-header-second-container p{
+        font-size: large;
+    }
+}
+@media (max-width: 600px) {
+    #about-us-our-team-header-second-container h6{
+        font-size: medium;
+    }
+    #about-us-our-team-header-second-container h2{
+        font-size: 25px;
+    }
+    #about-us-our-team-header-second-container p{
+        font-size: small;
+    }
+}
+
+/* our-team-card-container */
+#our-team-card-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+#our-team-card-second-container{
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+@media (min-width: 1800px) {
+    #our-team-card-second-container{
+        width: 1150px;
+    }
+}
+
+/* Card Design */
+#card-container{
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 1px 1px 5px 0 gray;
+    background-color: rgb(247, 247, 247);
+}
+#img-container{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #1c732c;
+}
+#img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#card-container h4{
+    color: #1c732c;
+    font-size: x-large;
+    font-weight: 900;
+    text-align: center;
+}
+#card-container span{
+    color: #666;
+    font-size: medium;
+    text-align: center;
+}
+#card-container a{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #0077B5;
+}
+#card-container a img{
+    width: 80%;
+    height: 80%;
+}
+
+
+/* Our Advisor */
+#about-us-our-advisors-header-section {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-us-our-advisors-header-second-container {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us-our-advisors-header-second-container h2 {
+    color: #1c732c;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+#about-us-our-advisors-header-second-container p {
+    color: #121216;
+    font-size: medium;
+    text-align: center;
+}
+@media (min-width: 3000px) {
+    #about-us-our-advisors-header-second-container h2 {
+        font-size: 40px;
+    }
+    #about-us-our-advisors-header-second-container p {
+        font-size: large;
+    }
+}
+@media (max-width: 600px) {
+    #about-us-our-advisors-header-second-container h2 {
+        font-size: 25px;
+    }
+    #about-us-our-advisors-header-second-container p {
+        font-size: small;
+    }
+}
+
+/* our-advisors-card-container (Renamed from our-team-card-container) */
+#our-advisors-card-container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#our-advisors-card-second-container {
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+@media (min-width: 1800px) {
+    #our-advisors-card-second-container{
+        width: 1150px;
+    }
+}
+/* Our Advisor */

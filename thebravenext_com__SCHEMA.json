@@ -1,0 +1,55 @@
+[{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://thebravenext.com/#organization",
+  "name": "The Brave Next",
+  "url": "https://thebravenext.com",
+  "sameAs": [
+    "https://www.facebook.com/thebravenext",
+    "https://www.instagram.com/thebravenext",
+    "https://www.linkedin.com/company/thebravenext"
+  ],
+  "email": "contact@thebravenext.com"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://thebravenext.com/#website",
+  "url": "https://thebravenext.com",
+  "name": "The Brave Next",
+  "publisher": {
+    "@id": "https://thebravenext.com/#organization"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://thebravenext.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": "en-US"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://thebravenext.com/#webpage",
+  "url": "https://thebravenext.com",
+  "name": "AI Service Provider - The Brave Next",
+  "about": {
+    "@id": "https://thebravenext.com/#organization"
+  },
+  "isPartOf": {
+    "@id": "https://thebravenext.com/#website"
+  },
+  "inLanguage": "en-US",
+  "primaryImageOfPage": {
+    "@id": "https://thebravenext.com/main-image.png"
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://thebravenext.com/#founder",
+    "name": "S.M Najam ul Haq",
+    "url": "https://thebravenext.com/founder"
+  },
+  "datePublished": "2024-12-28T00:00:00+00:00",
+  "dateModified": "2024-12-28T00:00:00+00:00",
+  "description": "The Brave Next provides cutting-edge AI solutions to transform businesses with innovative machine learning and automation."
+}]

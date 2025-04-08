@@ -1,0 +1,1450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#medical-header-main-container {
+    position: relative;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: last baseline;
+    overflow: hidden;
+}
+#medical-header-img-container{
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
+#medical-header-img-container img{
+    height: 100%;
+    width: 100%;
+}
+
+#medical-header-main-container h1 {
+    font-size: 50px;
+    position: absolute;
+    width: 60%;
+    font-weight: 600;
+    top: 30%;
+    left: 5%;
+    z-index: 2;
+    color: #000;
+}
+
+#medical-header-main-container h1 span {
+    display: inline-block;
+    opacity: 0; 
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+@media (max-width: 991px) {
+    #medical-header-main-container {
+        height: 450px;
+        width: 100%;
+    }
+    #medical-header-main-container h1 {
+        font-size: 35px; 
+        width: 50%;
+    }
+    #medical-header-img-container{
+        height: 80%;
+        width: 60%;
+        position: absolute;
+        right: 0;
+    }
+}
+@media (max-width: 768px) {
+    #medical-header-main-container {
+        height: 400px;
+        width: 100%;
+    }
+    #medical-header-main-container h1 {
+        font-size: 30px;
+        width: 70%;
+    }
+    #medical-header-img-container{
+        height: 80%;
+        width: 70%;
+        position: absolute;
+        right: 0;
+    }
+}
+@media (max-width: 600px) {
+    #medical-header-main-container h1 {
+        font-size: 25px;
+        width: 80%; 
+        top: 40%;
+    }
+    #medical-header-img-container{
+        height: 70%;
+        width: 80%;
+        position: absolute;
+        right: 0;
+    }
+}
+@media (max-width: 399px) {
+    #medical-header-main-container {
+        height: 350px;
+    }   
+    #medical-header-main-container h1 {
+        font-size: 20px;
+        width: 70%;
+    }
+    #medical-header-img-container{
+        height: 70%;
+        width: 70%;
+        position: absolute;
+        right: 0;
+    }
+}
+/* Second PorTion */
+#second-portion {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden; 
+}
+#second-portion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/Images/medical-page-second-portion-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5; 
+    z-index: 1; 
+}
+#second-portion > * {
+    position: relative; 
+    z-index: 2; 
+}
+#second-portion-left{
+    height: 100%;
+    width: 39%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#second-portion-left img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+}
+#second-portion-right{
+    height: 90%;
+    margin-top: 2%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#second-portion-right h1{
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    color: #1c732c;
+}
+#second-portion-right p{
+    font-size: smaller;
+}
+#second-portion-right button{
+    width: 250px;
+    height: 50px;
+    font-size: medium;
+    color: #ffffff;
+    font-weight: 900;
+    background-color: #121216;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    letter-spacing: 0.5px;
+}
+#second-portion-right button:hover{
+    background-image: linear-gradient(to right,#1c732c,#4b9533); 
+    border-color: #64ab2f;
+    box-shadow: 0 0 8px #1c732c;
+}
+@media (max-width: 1150px) {
+    #second-portion{
+        height: 450px;
+    }
+    #second-portion-left{
+        height: 100%;
+        width: 45%;
+    }
+  
+    #second-portion-right h1{
+        font-size: 40px;
+    }
+    #second-portion-right p{
+        font-size: x-small;
+    }
+    #second-portion-right button{
+        width: 220px;
+        height: 45px;
+        font-size: small;
+    }
+}
+@media (max-width: 991px) {
+    #second-portion{
+        flex-direction: column;
+        height: 700px;
+    }
+    #second-portion-left{
+        height: 50%;
+        width: 100%;
+    }
+    #second-portion-left img{
+        height: 350px;
+        width: 400px;
+    }
+    #second-portion-right{
+        height: 45%;
+        margin-top: 0;
+        width: 100%;
+    }
+    #second-portion-right h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    #second-portion-right p{
+        font-size: x-small;
+        text-align: center;
+    }
+    #second-portion-right button{
+        width: 220px;
+        position: relative;
+        left: 35%;
+        height: 45px;
+        font-size: medium;
+    }
+}
+@media (max-width: 600px) {
+    #second-portion{
+        flex-direction: column;
+        height: 700px;
+    }
+    #second-portion-left{
+        height: 50%;
+        width: 100%;
+    }
+    #second-portion-left img{
+        height: 300px;
+        width: 350px;
+    }
+    #second-portion-right{
+        height: 45%;
+        margin-top: 0;
+        width: 100%;
+    }
+    #second-portion-right h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    #second-portion-right p{
+        font-size: x-small;
+        text-align: center;
+    }
+    #second-portion-right button{
+        width: 200px;
+        position: relative;
+        left: 30%;
+        height: 40px;
+        font-size: smaller;
+    }
+}
+@media (max-width: 450px) {
+    #second-portion{
+        flex-direction: column;
+        height: 800px;
+    }
+    #second-portion-left{
+        height: 50%;
+        width: 100%;
+    }
+    #second-portion-left img{
+        height: 280px;
+        width: 280px;
+    }
+    #second-portion-right{
+        height: 45%;
+        margin-top: 0;
+        width: 100%;
+    }
+    #second-portion-right h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    #second-portion-right p{
+        font-size: xx-small;
+        text-align: center;
+    }
+    #second-portion-right button{
+        width: 180px;
+        position: relative;
+        left: 25%;
+        height: 35px;
+        font-size: x-small;
+    }
+}
+/* Third Portion */
+#third-portion{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #121216;
+    justify-content: center;
+    align-items: center;
+}
+#third-portion-left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#third-portion-left video{
+    height: 90%;
+    width: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#third-portion-right{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#third-portion-right h1{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+}
+#third-portion-right p{
+    font-weight: 200;
+    font-size: small;
+    color: white;
+    text-align: left;
+}
+#third-portion-all-Text-container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#third-portion-all-Text-container-left,#third-portion-all-Text-container-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#third-portion-all-Text-container-left p,#third-portion-all-Text-container-right p {
+    font-size: large;
+    color: white;
+    font-weight: 100;
+    position: relative;
+    padding-left: 30px; 
+}
+#third-portion-all-Text-container-left p::before ,#third-portion-all-Text-container-right p::before{
+    content: '✓';
+    font-size: large; 
+    color: #1c732c; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    border: 2px solid #1c732c; 
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+#third-portion-all-Text-container-left span ,#third-portion-all-Text-container-right span{
+    font-size: small;
+    font-weight: 100;
+    color: white;
+}
+#third-portion-right button{
+    width: 200px;
+    height: 45px;
+    font-size: medium;
+    color: #ffffff;
+    font-weight: 900;
+    background-color: #333;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    letter-spacing: 0.5px;
+}
+#third-portion-right button:hover{
+    background-image: linear-gradient(to right,#1c732c,#4b9533); 
+    box-shadow: 0 0 8px #1c732c;
+}
+@media (max-width: 991px){
+    #third-portion{
+        height: 900px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #third-portion-left{
+        width: 100%;
+        height: 48%;
+    }
+    #third-portion-right{
+        width: 85%;
+        height: 48%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #third-portion-right h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    #third-portion-right p{
+        font-size: small;
+        text-align: center;
+    }
+    #third-portion-all-Text-container{
+        height: 200px;
+        position: relative;
+        justify-content: space-between;
+        left: 15%;
+        width: 80%;
+    }
+    #third-portion-all-Text-container-left,#third-portion-all-Text-container-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #third-portion-all-Text-container-left,#third-portion-all-Text-container-right{
+        width: 50%;
+        
+    }
+    #third-portion-all-Text-container-left p,#third-portion-all-Text-container-right p {
+        font-size: large;
+        padding: 0;
+    }
+    #third-portion-all-Text-container-left span ,#third-portion-all-Text-container-right span{
+        font-size: x-small;
+    }
+    #third-portion-right button{
+        width: 200px;
+        height: 40px;
+        font-size: medium;
+        left: 40%;
+        bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    #third-portion {
+        height: auto; 
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px; 
+    }
+    #third-portion-left {
+        width: 100%; 
+        height: auto;
+    }
+    #third-portion-right {
+        width: 100%; 
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #third-portion-right h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    #third-portion-right p {
+        font-size: x-small;
+        text-align: center;
+    }
+    #third-portion-all-Text-container {
+        height: auto;
+        position: relative;
+        justify-content: space-between;
+        left: 0; 
+        width: 100%;
+        padding: 10px;
+    }
+    #third-portion-all-Text-container-left, 
+    #third-portion-all-Text-container-right {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px; 
+    }
+    #third-portion-all-Text-container-left p, 
+    #third-portion-all-Text-container-right p {
+        font-size: medium;
+        padding: 0; 
+        text-align: center; 
+    }
+    #third-portion-all-Text-container-left span, 
+    #third-portion-all-Text-container-right span {
+        font-size: x-small; 
+    }
+    #third-portion-right button {
+        width: 200px; 
+        height: 40px;
+        font-size: medium;
+        margin: 10px 0; 
+        left: 35%; 
+    }
+}
+@media (max-width: 600px) {
+    #third-portion {
+        height: auto; 
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    #third-portion-left {
+        width: 100%; 
+        height: auto; 
+    }
+    #third-portion-right {
+        width: 100%; 
+        height: auto; 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #third-portion-right h1 {
+        font-size: 20px; 
+        text-align: center;
+    }
+    #third-portion-right p {
+        font-size: xx-small; 
+        text-align: center;
+    }
+    #third-portion-all-Text-container {
+        height: auto; 
+        position: relative;
+        justify-content: space-between;
+        left: 0; 
+        width: 100%; 
+        padding: 5px;
+    }
+    #third-portion-all-Text-container-left, 
+    #third-portion-all-Text-container-right {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px; 
+    }
+    #third-portion-all-Text-container-left p, 
+    #third-portion-all-Text-container-right p {
+        font-size: small; 
+        padding: 0; 
+        text-align: center; 
+    }
+    #third-portion-all-Text-container-left span, 
+    #third-portion-all-Text-container-right span {
+        font-size: 0.5rem; 
+    }
+    #third-portion-right button {
+        width: 170px; 
+        height: 35px; 
+        font-size: small; 
+        left: 25%;
+    }
+}
+@media (max-width: 400px) {
+    #third-portion {
+        height: auto; 
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px; 
+    }
+    #third-portion-left {
+        width: 100%;
+        height: auto; 
+    }
+    #third-portion-right {
+        width: 100%; 
+        height: auto; 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #third-portion-right h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    #third-portion-right p {
+        font-size: 0.4rem; 
+        text-align: center;
+    }
+    #third-portion-all-Text-container {
+        height: auto; 
+        position: relative;
+        justify-content: space-between;
+        left: 0; 
+        width: 100%; 
+        padding: 5px; 
+    }
+    #third-portion-all-Text-container-left, 
+    #third-portion-all-Text-container-right {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px; 
+    }
+    #third-portion-all-Text-container-left p, 
+    #third-portion-all-Text-container-right p {
+        font-size: x-small; 
+        padding: 0; 
+        text-align: center; 
+    }
+    #third-portion-all-Text-container-left p::before ,#third-portion-all-Text-container-right p::before{
+        font-size: x-small; 
+        position: absolute; 
+        left: 0; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        border: 1px solid #1c732c; 
+        border-radius: 50%; 
+        width: 20px; 
+        height: 20px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+    #third-portion-all-Text-container-left span, 
+    #third-portion-all-Text-container-right span {
+        font-size: 0.4rem; 
+    }   
+    #third-portion-right button {
+        width: 150px;
+        height: 35px; 
+        font-size: x-small;
+        left: 25%;
+    }
+}
+/* Fourth Portion */
+#fourth-portion {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#fourth-portion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/Images/medical-page-second-portion-bg.png);
+    background-size: cover; 
+    opacity: 0.2; 
+    z-index: 1; 
+}
+#fourth-portion > * {
+    position: relative;
+    z-index: 2; 
+}
+#fourth-second-portion {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+#fourth-second-portion h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #1c732c;
+}
+#fourth-second-portion p {
+    font-size: medium;
+    color: #000;
+}
+#fourth-second-portion span {
+    font-size: medium;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+}
+#fourth-second-portion span::before {
+    content: '✔'; 
+    background-color: #1c732c; 
+    color: #ffffff; 
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    top: 6px; 
+    font-size: small;
+    padding-left: 3px;
+    border-radius: 50%;
+}
+#fourth-second-portion span:hover {
+    color: #1c732c;
+}
+@media (max-width: 991px) {
+    #fourth-second-portion span {
+        font-size: small;
+    }
+    #fourth-second-portion p {
+        font-size: small;
+    }
+    #fourth-second-portion span::before {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        font-size: x-small;
+        padding-left: 3px;
+        border-radius: 50%;
+    }   
+}
+@media (max-width: 768px) {
+    #fourth-portion {
+        height: 650px; 
+    }
+    #fourth-second-portion h1 {
+        font-size: 35px; 
+    }
+    #fourth-second-portion span {
+        font-size: smaller;
+    }
+    #fourth-second-portion p {
+        font-size: smaller;
+    }
+    #fourth-second-portion span::before {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        font-size: x-small;
+        padding-left: 3px;
+        border-radius: 50%;
+    }   
+}
+@media (max-width: 600px) {
+    #fourth-portion {
+        height: 500px; 
+    }
+    #fourth-second-portion h1 {
+        font-size: 25px; 
+    }
+    #fourth-second-portion span {
+        font-size: x-small;
+    }
+    #fourth-second-portion p {
+        font-size: x-small;
+    }
+    #fourth-second-portion span::before {
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        top: 0;
+        font-size: xx-small;
+        padding-left: 2px;
+        border-radius: 50%;
+    }
+    
+}
+@media (max-width: 399px) {
+    #fourth-portion {
+        height: 550px; 
+    }
+    #fourth-second-portion h1 {
+        font-size: 25px;
+    }
+    #fourth-second-portion span {
+        font-size: x-small;
+    }
+    #fourth-second-portion p {
+        font-size: x-small;
+    }
+    #fourth-second-portion span::before {
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        top: 0;
+        font-size: xx-small;
+        padding-left: 2px;
+        border-radius: 50%;
+    }
+}
+
+
+/* Medical card */
+#medical-card-main-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#medical-card-second-container{
+    height: fit-content;
+    width:90%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#medical-card-second{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#medical-card-second-container-left {
+    height: auto; 
+    max-height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    position: relative; 
+}
+
+#medical-card-second-container-left ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    position: sticky;
+    top: 10%; 
+    padding-bottom: 50px;
+    background: white;
+    z-index: 1; 
+    max-height: calc(100vh - 20px); 
+    overflow-y: auto; 
+}
+#medical-card-second-container-left ul li {
+    font-size: larger;
+    margin-top: 30px;
+    width: 70%;
+    border-bottom: 2px solid black;
+    border-radius: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#medical-card-second-container-left ul li:focus{
+    color: #1c732c;
+}
+#medical-card-second-container-left ul li:hover{
+    padding-left: 30px;
+    border-color: #1c732c;
+}
+
+#medical-card-second-container-left ul li:hover::before {
+    content: '➪'; 
+    margin-right: 10px;
+    position: absolute;
+    color: #1c732c;
+    font-size: larger;
+    border: 0.5px solid #1c732c;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: medium;
+    left: 0%;
+    opacity: 1;
+    padding-left: 3px;
+    animation: scaleFadeIn 0.5s ease forwards;
+}
+
+@keyframes scaleFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+#medical-card-second-container-left ul li::before {
+    content: ''; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+#medical-card-second-container-left ul li.visible{
+    opacity: 1; 
+    transform: translateX(0); 
+}
+
+#medical-card-second-container-left ul li.active {
+    padding-left: 30px;
+    border-color: #1c732c;
+}
+
+#medical-card-second-container-left ul li.active::before {
+    content: '➪'; 
+    margin-right: 10px;
+    position: absolute;
+    color: #1c732c;
+    font-size: larger;
+    border: 1px solid #1c732c;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: medium;
+    left: 0;
+    opacity: 1;
+    padding-left: 3px;
+}
+#medical-card-second-container-right{
+    height: fit-content;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+}
+#medical-card-containment{
+    height: 300px;
+    width: 100%;
+    border: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row;
+}
+#card-image-container{
+    height: 100%;
+    width: 40%;
+}
+#card-image-container img{
+    height: 100%;
+    width: 100%;
+}
+#card-text-container{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #121216;
+    padding-left: 20px;
+}
+#card-text-container p{
+    font-size: small;
+    color: gray;
+}
+#card-text-container h6{
+    font-size: medium;
+    font-weight: 600;
+    color: #1c732c;
+}
+#card-text-container h1{
+    color: white;
+    transition: all 0.5s;
+    font-size: 32px;
+}
+#card-text-container h1:hover{
+    color: #1c732c;
+}
+
+#medical-card-second-container-right button{
+    height: 40px;
+    width: 200px;
+    border: none;
+    color: white;
+    background-color: #1c732c;
+    border-radius: 10px;
+    margin-top: 50px;
+    transition: all 1s;
+    background-image: none;
+}
+#medical-card-second-container-right button:hover{
+    background-color: none;
+    background-image: linear-gradient(to right,#1c732c,#64ab2f);
+}
+
+
+#hidden-card-container{
+    display: none;
+}
+
+
+@media (max-width: 991px){
+    #medical-card-second{
+        flex-direction:column;
+        align-items: center;
+    }
+    #medical-card-second-container-right{
+        width: 80%;
+        align-items: center;
+    }
+    #medical-card-containment{
+        height: 300px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    
+#medical-card-second-container-left {
+    height: auto; 
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative; 
+}
+
+#medical-card-second-container-left ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    width: 100%;
+    position: sticky;
+    top: 10%; 
+    background: white;
+    z-index: 1;
+     
+    max-height: calc(100vh - 20px);
+    overflow-y: auto; 
+}
+#medical-card-second-container-left ul li {
+    font-size: larger;
+    margin-top: 30px;
+    width: 70%;
+    border-bottom: 2px solid black;
+    position: relative;
+    left: 15%;
+    border-radius: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+} 
+
+@media (max-width: 768px){
+    #medical-card-second{
+        flex-direction:column;
+        align-items: center;
+    }
+    #medical-card-second-container-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    #medical-card-containment{
+        height: 260px;
+        width: 100%;
+        border: 1px solid gainsboro;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: row;
+    }
+    #card-text-container p{
+        font-size: small;
+        color: gray;
+    }
+    #card-text-container h6{
+        font-size: 15px;
+        font-weight: 600;
+        color: #1c732c;
+    }
+    #card-text-container h1{
+        color: white;
+        transition: all 0.5s;
+        font-size: 28px;
+    }
+    
+#medical-card-second-container-left {
+    height: auto; 
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative; 
+}
+
+#medical-card-second-container-left ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    width: 100%;
+    position: sticky;
+    top: 10%; 
+    background: white;
+    z-index: 1;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto; 
+}
+#medical-card-second-container-left ul li {
+    font-size: larger;
+    margin-top: 0px;
+    width: 70%;
+    border-bottom: 2px solid black;
+    position: relative;
+    left: 15%;
+    border-radius: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+} 
+
+@media (max-width: 600px){
+    #medical-card-second-container{
+        width:95%;
+    
+    }
+    #medical-card-second{
+        flex-direction:column;
+        align-items: center;
+    }
+    #medical-card-second-container-right{
+        width: 100%;
+    }
+    #medical-card-containment{
+        height: 230px;
+    }
+    #card-text-container{
+        padding-left: 5px;
+    }
+    #card-text-container p{
+        font-size: x-small;
+        color: gray;
+    }
+    #card-text-container h6{
+        font-size: 12px;
+        font-weight: 600;
+        color: #1c732c;
+    }
+    #card-text-container h1{
+        color: white;
+        transition: all 0.5s;
+        font-size: 22px;
+    }
+    
+#medical-card-second-container-left {
+    height: auto; 
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative; 
+}
+#medical-card-second-container-left ul li {
+    font-size: large;
+    margin-top: 0px;
+    width: 70%;
+    border-bottom: 2px solid black;
+    position: relative;
+    left: 15%;
+    border-radius: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+} 
+
+@media (max-width: 600px){
+    #medical-card-second-container{
+        width:95%;
+    
+    }
+    #medical-card-second{
+        flex-direction:column;
+        align-items: center;
+    }
+    #medical-card-second-container-right {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #medical-card-containment{
+        height: 400px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    #card-image-container{
+        height: 60%;
+        width: 100%;
+    }
+    #card-text-container{
+        height: 42%;
+        width: 100%;
+        padding-left: 5px;
+       
+    }
+    #card-text-container p{
+        font-size: x-small;
+        color: gray;
+    }
+    #card-text-container h6{
+        font-size: 12px;
+        font-weight: 600;
+        color: #1c732c;
+    }
+    #card-text-container h1{
+        color: white;
+        transition: all 0.5s;
+        font-size: 22px;
+    }
+    
+#medical-card-second-container-left {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative; 
+}
+#medical-card-second-container-left ul li {
+    font-size: large;
+    margin-top: 0px;
+    width: 70%;
+    border-bottom: 2px solid black;
+    position: relative;
+    left: 15%;
+    border-radius: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+} 
+
+
+
+@media only screen and (min-width: 3001px) and (max-width: 5000px) {
+    #medical-header-img-container {
+        height: 80%;
+        width: 20%;
+        }
+        #card-image-container {
+            height: 100%;
+            width: 30%;
+        }
+        #card-text-container {
+            width: 70%;
+        }
+        #medical-header-main-container h1 {
+            font-size: 100px;
+        }
+        #second-portion {
+            height: 800px;
+            gap: 100px;
+        }
+        #second-portion-left{
+            width: 25%;
+        }
+        #second-portion-left img {
+            height: 700px;
+            width: 1000px;
+        }
+        #second-portion-right {
+            width: 30%;
+            justify-content: center;
+        }
+        #second-portion-right h1 {
+            font-size: 80px;
+        }
+        #second-portion-right p {
+            font-size: x-large;
+        }
+        #second-portion-right button {
+            width: 350px;
+            height: 50px;
+            margin-top: 30px;
+            font-size: x-large;
+        }
+        #third-portion-right h1 {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            font-size: 50px;
+        }
+        #third-portion {
+            height: 800px;
+        }
+        #third-portion-right p {
+            font-size: xx-large;
+        }
+        #third-portion-all-Text-container-left span, #third-portion-all-Text-container-right span {
+            font-size: x-large;
+            font-weight: 100;
+        }
+        #third-portion-right button {
+            width: 350px;
+            height: 80px;
+            font-size: xx-large;
+            border-radius: 50px;
+        }
+        #fourth-portion {
+            height: 800px;
+        }
+        #fourth-second-portion h1 {
+            font-size: 60px;
+        }
+        #fourth-second-portion p {
+            font-size: xx-large;
+        }
+        #fourth-second-portion span {
+            font-size: xx-large;
+        }
+        #medical-card-second-container h1{
+            font-size: 80px;
+        }
+        #medical-card-second-container-left ul li {
+            font-size: xx-large;
+        }
+        #medical-card-containment {
+            height: 500px;
+        }
+        #card-text-container p {
+            font-size: xx-large;
+        }
+        #card-text-container h6 {
+            font-size: xx-large;
+        }
+        #medical-card-second-container-right button {
+            height: 80px;
+            width: 350px;
+            font-size: xx-large;
+        }
+    }
+@media only screen and (min-width: 1800px) and (max-width: 3000px) {
+    #medical-header-img-container {
+        height: 80%;
+        width: 30%;
+        }
+        #card-image-container {
+            height: 100%;
+            width: 30%;
+        }
+        #card-text-container {
+            width: 70%;
+        }
+        #medical-header-main-container h1 {
+            font-size: 70px;
+        }
+        #second-portion {
+            height: 600px;
+        }
+        #second-portion-right {
+            width: 30%;
+            justify-content: space-evenly;
+        }
+        #second-portion-left img {
+    height: 80%;
+    width: 60%;
+    border-radius: 20px;
+        }
+        #third-portion-right h1 {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            font-size: 40px;
+        }
+        #third-portion {
+            height: 600px;
+        }
+        #third-portion-right p {
+            font-size: x-large;
+        }
+        #third-portion-right button {
+            width: 300px;
+            height: 70px;
+            font-size: x-large;
+        }
+        #fourth-portion {
+            height: 600px;
+        }
+        #fourth-second-portion h1 {
+            font-size: 50px;
+        }
+        #fourth-second-portion p {
+            font-size: x-large;
+        }
+        #fourth-second-portion span {
+            font-size: x-large;
+        }
+        #medical-card-second-container h1{
+            font-size: 70px;
+        }
+        #medical-card-second-container-left ul li {
+            font-size: x-large;
+        }
+        #medical-card-containment {
+            height: 400px;
+        }
+        #card-text-container p {
+            font-size: x-large;
+        }
+        #card-text-container h6 {
+            font-size: x-large;
+        }
+        #medical-card-second-container-right button {
+            height: 70px;
+            width: 300px;
+            font-size: x-large;
+        }
+        #medical-card-second-container h1 {
+            font-size: 50px;
+        }
+    }
+
+    .n{
+        color: red;
+    }

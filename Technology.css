@@ -1,0 +1,671 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#Technology-main-container {
+    height: 720px;
+    margin-top: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#Technology-top-main-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+#Technology-bottom-main-container {
+    height: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#Technology-top-main-container h1 {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: slideInRight 1s forwards;
+}
+
+#Technology-top-main-container h1 span {
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    opacity: 0;
+    animation: slideInRight 1s 0.5s forwards; 
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+#Technology-Card-main-container{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    perspective: 1500px;
+    align-items: center;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%) rotateY(20deg) rotateX(00deg);
+    }
+    100% {
+        transform: translateX(0) rotateY(20deg) rotateX(00deg);
+    }
+}
+@keyframes CardslideInRight {
+    0% {
+        transform: translateX(100%) rotateY(-20deg) rotateX(00deg);
+    }
+    100% {
+        transform: translateX(0) rotateY(-20deg) rotateX(00deg);
+    }
+}
+.Technology-card{
+    height: 85%;
+    background-color: rgb(255, 249, 249);
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: all 1s;
+}
+#Technology-first-card {
+    animation: slideInLeft 1s ease-out forwards;
+    border-left: 0.5px solid rgb(170, 170, 170);
+    border-right: 0.5px solid rgb(209, 206, 206);
+    box-shadow: -20px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#Technology-second-card {
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(170, 170, 170);
+    width: 350px;
+    height: 95%;
+}
+
+#Technology-third-card {
+    animation: CardslideInRight 1s ease-out forwards;
+    border-right: 0.5px solid rgb(170, 170, 170);
+    border-left: 0.5px solid rgb(209, 206, 206);
+    box-shadow: 20px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+#Technology-card-top{
+    height: 150px;
+    perspective: 1500;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    position: relative;
+}
+#Technology-card-top::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 05px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#Technology-first-card #Technology-card-top{
+    box-shadow: -2px 0px 5px 0 rgb(170, 170, 170) ;
+}
+#Technology-first-card #Technology-card-top::after{
+    box-shadow: -5px 4px 5px 0 rgb(170, 170, 170) ;
+}
+#Technology-second-card #Technology-card-top{
+    border-radius: 05px;
+    box-shadow: 2px 4px 20px 0 rgb(170, 170, 170);
+}
+#Technology-third-card #Technology-card-top{
+    box-shadow: 2px 0px 5px 0 rgb(170, 170, 170) ;
+}
+#Technology-third-card #Technology-card-top::after{
+    box-shadow: 3px 3px 5px 0 rgb(170, 170, 170) ;
+}
+#Technology-card-top h3{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    color: #1c732c;
+}
+#Technology-first-card #Technology-card-top h3{
+    transform: rotateY(20deg)rotateX(0);
+}
+#Technology-second-card #Technology-card-top h3{
+    font-size: 20px;
+
+}
+#Technology-third-card #Technology-card-top h3{
+    transform: rotateY(-20deg)rotateX(0);
+}
+#Technology-card-top p{
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+#Technology-first-card #Technology-card-top p{
+    transform: rotateY(20deg)rotateX(0);
+}
+#Technology-third-card #Technology-card-top p{
+    transform: rotateY(-20deg)rotateX(0);
+}
+#Technology-card-bottom{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+}
+#Technology-first-card #Technology-card-bottom{
+    transform: rotateY(20deg)rotateX(0deg);
+}
+#Technology-third-card #Technology-card-bottom{
+    transform: rotateY(-20deg)rotateX(0deg);
+}
+#Technology-card-bottom p {
+    font-size: 11.5px;
+    text-align: left;
+    font-weight: 900;
+    position: relative;
+    padding-left: 30px;
+}
+#Technology-first-card #Technology-card-bottom p,#Technology-third-card #Technology-card-bottom p{
+    margin-top: -05px;
+}
+
+#Technology-card-bottom p::before {
+    content: '\2713';
+    font-size: 8px;
+    color: #1c732c;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1c732c;
+}
+#Small-Technology-card-container{
+    height: 100%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#Small-Technology-Card{
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px 1px gray;
+}
+#Small-Technology-Card-Top{
+    height: 150px;
+    width: 98%;
+    display: flex;
+    box-shadow: 1px 1px 5px 0;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#Small-Technology-Card-Top h3{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    color: #1c732c;
+}
+#Small-Technology-Card-Top p{
+    font-size: 13px;
+    text-align: left;
+}
+#Small-Technology-Card-bottom{
+    height: 200px;
+    width: 95%;
+}
+#Small-Technology-Card-bottom p {
+    font-size: 11px;
+    text-align: left;
+    font-weight: 900;
+    position: relative;
+    padding-left: 30px;
+}
+
+#Small-Technology-Card-bottom p::before {
+    content: '\2713';
+    font-size: 10px;
+    color: #1c732c;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1c732c;
+}
+@media screen and (min-width: 3001px) and (max-width: 5000px){
+    #Technology-top-main-container h1 {
+        font-size: 60px;
+    }
+    #Technology-top-main-container h1 span {
+        font-size: 55px;
+    }
+    #Technology-Card-main-container{
+        height: 450px;
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1700px) and (max-width: 3000px){
+    #Technology-top-main-container h1 {
+        font-size: 50px;
+    }
+    #Technology-top-main-container h1 span {
+        font-size: 45px;
+    }
+    #Technology-Card-main-container{
+        height: 420px;
+        width: 55%;
+    }
+}
+@media (max-width: 1200px){
+    /* #Technology-card-top h3{
+        font-size: 30px;
+        text-align: center;
+        font-weight: 900;
+        color: #1c732c;
+    }
+    #Technology-second-card #Technology-card-top h3{
+        font-size: 33px;
+    
+    }
+    #Technology-card-top p{
+        font-size: 17px;
+    } */
+     #Technology-Card-main-container{
+        width: 95%;
+     }
+    .Technology-card{
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+   
+    #Technology-top-main-container h1 {
+        font-size: 40px;
+    }
+    #Technology-top-main-container h1 span {
+        font-size: 35px;
+    }
+    #Technology-main-container {
+        height: fit-content;
+    }
+    #Technology-bottom-main-container {
+        height: fit-content;
+    }
+    #Technology-Card-main-container{
+        display: none;
+    }
+    #Small-Technology-card-container{
+        display: flex;
+    }
+
+
+}
+@media (max-width: 768px) {
+    #Technology-top-main-container {
+        height: 250px;
+    }
+    #Technology-main-container {
+        height: fit-content;
+    }
+    #Technology-bottom-main-container {
+        height: fit-content;
+    }
+    #Technology-Card-main-container{
+        display: none;
+    }
+    #Small-Technology-card-container{
+        display: flex;
+    }
+    #Technology-top-main-container h1 {
+        font-size: 35px;
+    }
+    #Technology-top-main-container h1 span {
+        font-size: 35px;
+    }
+}
+@media (max-width: 600px) {
+    #Technology-top-main-container {
+        height: 200px;
+    }
+    #Technology-main-container {
+        height: fit-content;
+    }
+    #Technology-bottom-main-container {
+        height: fit-content;
+    }
+    #Technology-Card-main-container{
+        display: none;
+    }
+    #Small-Technology-card-container{
+        display: flex;
+    }
+    #Technology-top-main-container h1 {
+        font-size: 30px;
+    }
+
+    #Technology-top-main-container h1 span {
+        font-size: 28px;
+    }
+}
+@media (max-width: 399px) {
+    #Technology-top-main-container {
+        height: 150px;
+    }
+    #Technology-main-container {
+        height: fit-content;
+      
+    }
+    #Technology-bottom-main-container {
+        height: fit-content;
+    }
+    #Technology-Card-main-container{
+        display: none;
+
+    }
+    #Small-Technology-card-container{
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    #Technology-top-main-container h1 {
+        font-size: 22px;
+    }
+
+    #Technology-top-main-container h1 span {
+        font-size: 22px;
+    }
+}
+
+
+/* HArness Container */
+/* .harness-right{
+    height: 100%;
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px;
+    perspective: 0px;
+}
+.harness-right img {
+    box-shadow: 2px 2px 0px 02px rgb(155, 155, 155);
+    border-radius: 10px;
+    object-fit: fill;
+    height: 100%;
+    width: auto;
+    cursor: zoom-in;
+    transition: transform 0.1s ease-in-out;
+    will-change: transform; 
+  }
+
+@media (max-width: 991px) {
+
+    #second-harness-container {
+        flex-direction: column;
+    }
+} */
+@media (max-width: 1279px) {
+    .harness-right img {
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    .harness-right img {
+        object-fit: fill;
+        height: 95%;
+        width: auto;
+      }
+}
+@media (max-width: 399px) {
+    .harness-right img {
+        object-fit: fill;
+        height: 100%;
+        width: auto;
+    }
+}
+
+#harness-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+#harness-left h3{
+    font-size: 30px;
+    width: 100%;
+    font-weight: 900;
+    text-align: left;
+    color: #1c732c;
+}
+#harness-left div{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+#harness-left div p{
+    font-size: small;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+}
+#harness-left div p::before{
+    content: '\2713';
+    font-size: 12px;
+    color: #1c732c;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1c732c;
+}
+#harness-left button{
+    height: 40px;
+    width: 150px;
+    font-size: small;
+    font-weight: 300;
+    color: #fff;
+    border: none;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+#harness-left button::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,-50%);
+    left: 10px;
+    height: 7px;
+    width: 7px;
+    background: white;
+    border-radius: 50%;
+}
+#harness-left button:hover{
+    background-color: #1c732c;
+}
+@media (min-width: 1800px){
+#second-harness-container {
+    height: 90%;
+    width: 50%;
+}
+}
+@media (max-width: 991px){
+    #harness-First-main-heading h2{
+        margin-bottom: 50px;
+    }
+    #harness-container{
+        height: fit-content;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #harness-left {
+        width: 100%;
+        position: relative;
+        height: 50%;
+    }
+    #harness-left h3{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #harness-left div{
+        height: 200px;
+    }
+    #harness-left div p{
+        font-size: 11px;
+    }
+    #harness-left button{
+       display: none;
+    }
+    .Technology-Harness-reverse{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse !important;
+    }
+    .harness-right img{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media (max-width: 768px){
+    #harness-left div p{
+        font-size: small;
+    }
+    #harness-left button{
+       display: none;
+    }
+}
+@media (max-width: 600px){
+    #harness-left {
+        width: 100%;
+        position: relative;
+        height: 50%;
+    }
+    #harness-left h3{
+        font-size: 18px;
+        margin: 0;
+        text-align: center;
+    }
+    #harness-left div {
+        height: 240px;
+    }
+    #harness-left div p{
+        font-size: xx-small;
+    }
+    #harness-left button{
+        display: none;
+     }
+     .harness-right img{
+        height: 200px;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    
+    .Smart-Monitoring-System .harness-right img{
+     margin-bottom: -30px;   
+    }
+}
+@media (max-width: 399px){
+    #harness-left {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        height: 50%;
+    }
+    #harness-left h3{
+        font-size: 17px;
+        text-align: center;
+    }
+    #harness-left div {
+        height: 200px;
+    }
+    #harness-left div p{
+        font-size: xx-small;
+    }
+    #harness-left button{
+        display: none;
+     }
+  
+}
+
+.n{
+    color: red;
+}
