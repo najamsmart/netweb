@@ -6402,6 +6402,13 @@ background-image: url('news\ card3.jpg');
         transform: translateX(0);
     }
 }
+
+@media (min-width: 2000px) {
+#icon-text img{
+    height: 100px;
+    width: auto;
+}
+}
 @media (max-width: 480px) {
     .whatsapp-icon {
         padding: 0px;
